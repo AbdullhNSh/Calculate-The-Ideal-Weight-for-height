@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="126dp" >
+
+    <RadioButton
+        android:textSize="30dp"
+        android:id="@+id/rdMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+
+    <RadioButton
+        android:textSize="30dp"
+        android:layout_marginStart="100dp"
+        android:id="@+id/rdFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="120dp"
+        android:layout_marginLeft="100dp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+
+    <EditText
+        android:typeface="serif"
+        android:id="@+id/edtHeight"
+        android:hint="height in cm"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+    />
+
+    <EditText
+        android:typeface="serif"
+        android:id="@+id/edtWeight"
+        android:hint="weight KG"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+
+    <Button
+        android:id="@+id/btnGetResult"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="get the result"
+        />
+</LinearLayout>
+</ScrollView>
